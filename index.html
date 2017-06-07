@@ -33,13 +33,13 @@
         <hr>
 
         <h6>Categories</h6>
-        <p> <input type="checkbox" id="admin" name="category" value="admin">
+        <p> <input type="checkbox" id="admin" name="category" value="admin" class="checkbox yellow-box">
         <label for="admin">Administrative</label> </p>
-        <p> <input type="checkbox" id="design" name="category" value="design">
+        <p> <input type="checkbox" id="design" name="category" value="design" class="checkbox blue-box">
         <label for="design">Design</label> </p>
-        <p> <input type="checkbox" id="exec" name="category" value="exec">
+        <p> <input type="checkbox" id="exec" name="category" value="exec" class="checkbox red-box">
         <label for="exec">Executive</label> </p>
-        <p> <input type="checkbox" id="hr" name="category" value="hr">
+        <p> <input type="checkbox" id="hr" name="category" value="hr" class="checkbox green-box">
         <label for="hr">Human Resources</label> </p>
       </ul>
     </aside>
@@ -47,11 +47,11 @@
     <div class="main-section">
       <header>
         <div class="header-search-div">
-          <button class="header-btns"></button>
+          <button class="header-btns hamy"><img src="./assets/menu.svg" alt="hamburger menu icon" class="const-img"></button>
           <input type="text" class="search-input" placeholder="Search for a job, task or resume">
-          <button class="header-btns"></button>
-          <button class="header-btns"></button>
-          <button class="header-btns"></button>
+          <button class="header-btns"><img src="./assets/people.svg" alt="icon for adding users"></button>
+          <button class="header-btns"><img src="./assets/school-calendar (1).svg" alt="calendar icon"></button>
+          <button class="header-btns"><img src="./assets/grid.svg" alt="grid icon"></button>
         </div>
 
         <h1>Customer Service Representative</h1>
@@ -62,111 +62,132 @@
             <div class="point"></div>
             <h5 class="blue-text">Preview this post</h5>
           </div>
+
           <div class="title-btns">
             <button class="open-btn" id="wider-btn"><img src="./assets/dot.png" alt="green dot" id="dot">OPEN</button>
-            <button class="open-btn"></button>
-            <button class="open-btn"></button>
-            <button class="open-btn"></button>
+            <button class="open-btn"><img src="./assets/ribbon.svg" alt="ribbon icon"></button>
+            <button class="open-btn"><img src="./assets/pencil-2.svg" alt="pencil icon"></button>
+            <button class="open-btn"><img src="./assets/trash.svg" alt="trash can icon"></button>
           </div>
         </div>
 
         <nav class="navigation">
           <a href="" class="nav-links">SUMMARY</a>
           <a href="" class="nav-links">APPLICANTS</a>
-          <a href="" class="nav-links">JOB BOARD</a>
-          <a href="" class="nav-links">INTERVIEWS</a>
-          <a href="" class="nav-links">ACTIVITY</a>
-          <a href="" class="nav-links">BROADCAST</a>
-          <a href="" class="nav-links">NOTIFICATIONS</a>
+          <a href="" class="nav-links hide2">JOB BOARD</a>
+          <a href="" class="nav-links hide2">INTERVIEWS</a>
+          <a href="" class="nav-links hide2">ACTIVITY</a>
+          <a href="" class="nav-links hide1">BROADCAST</a>
+          <a href="" class="nav-links hide1">NOTIFICATIONS</a>
+          <a href="" class="nav-links hide0">MORE...</a>
         </nav>
       </header>
 
       <main role="main">
-        <div class="main-top">
-          <div class="three-circles">
-            <div class="circle left-circle"></div>
-            <div class="circle mid-circle"></div>
-            <div class="circle right-circle"></div>
-          </div>
-            <img src="./assets/graph.png" alt="placeholder for a bar graph">
-        </div>
-        <div class="graph-btns">
-          <button class="totals">TOTALS - out of xxxx views</button>
-          <button class="totals" id="bargraph-btn">APPLICANTS/DAY</button>
-        </div>
-
-        <div class="section-devider">
-          <hr>
-          <div class="arrow"><img src="./assets/up-arrow.svg" alt="up-arrow"></div>
-          <hr>
-        </div>
-
-        <div class="main-bottom">
-          <table class="job-info">
-            <tr>
-              <th>JOB DESCRIPTION</th>
-              <th><button class="edit"><img src="./assets/pencil.svg" alt="pencil">EDIT</button></th></tr>
-            <tr>
-              <td class="table-title">POSITION TITLE</td>
-              <td>Customer Service Representative</td>
-            </tr>
-            <tr>
-              <td class="table-title">LOCATION</td>
-              <td>San Fransisco, CA</td>
-            </tr>
-            <tr>
-              <td class="table-title">EMPLOYMENT TYPE</td>
-              <td>Full-time</td>
-            </tr>
-            <tr>
-              <td class="table-title">EXPERIENCE</td>
-              <td>Mid-level</td>
-            </tr>
-            <tr>
-              <td class="table-title">STATUS</td>
-              <td>Open</td>
-            </tr>
-            <tr>
-              <td class="table-title moveup">DESCRIPTION</td>
-              <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing backhand spring and eating a ham sandwhich.</td>
-            </tr>
-            <tr>
-              <td class="table-title">HIRING LEAD</td>
-              <td><img src="" alt=""> this guy</td>
-            </tr>
-            <tr>
-              <td class="table-title">APPROVED SALARY</td>
-              <td>$58,000</td>
-            </tr>
-          </table>
-
-          <div class="main-bottom-right">
-            <button class="social-media fbook"><img src="./assets/facebook-letter.svg" alt="facebook icon">Post to Facebook</button>
-            <button class="social-media twitter"><img src="./assets/twitter.svg" alt="twitter icon">Tweet this Job</button>
-            <button class="social-media linkedin"><img src="./assets/linked-in.svg" alt="linkedin icon">Post to Linkedin</button>
+        <div class="main-all">
+          <div class="main-top">
+            <div class="three-circles">
+              <div class="circle left-circle"><h4>3,154</h4><p>APPLICANTS</p></div>
+              <div class="circle mid-circle"><h4>1,546</h4><p>INTERVIEWS</p></div>
+              <div class="circle right-circle"><h4>912</h4><p>FORWARDS</p></div>
+            </div>
+            <button class="totals mobile">TOTALS - out of xxxx views</button>
+              <img src="./assets/graph.png" alt="placeholder for a bar graph">
           </div>
 
-          <div class="all-links">
-            <div class="links">
-              <img src="./assets/world-grid.svg" alt="globe grid">
-              <h3>Link to this Job</h3>
-              <p>text here</p>
-              <input type="text">
-              <button></button>
-            </div>
-            <div class="links">
-              <img src="" alt="">
-              <h3>Use the Button Widget</h3>
-              <p>text here</p>
-              <input type="text">
-              <button></button>
-            </div>
-            <div class="links">
-              <img src="" alt="">
-              <h3>Upload Resumes by Email</h3>
-              <p>text here</p>
-              <input type="text">
-              <button></button>
+          <div class="graph-btns">
+            <button class="totals desktop">TOTALS - out of xxxx views</button>
+            <button class="totals" id="bargraph-btn">APPLICANTS/DAY</button>
+          </div>
+
+          <div class="section-devider">
+            <hr>
+            <div class="arrow"><img src="./assets/up-arrow.svg" alt="up-arrow"></div>
+            <hr>
+          </div>
+
+          <div class="main-bottom">
+            <table class="job-info">
+              <tr class="t-head">
+                <th class="th-title">JOB DESCRIPTION</th>
+                <th><button class="edit"><img src="./assets/pencil.svg" alt="pencil">EDIT</button></th>
+              </tr>
+
+              <tr>
+                <td class="table-title">POSITION TITLE</td>
+                <td>Customer Service Representative</td>
+              </tr>
+
+              <tr>
+                <td class="table-title">LOCATION</td>
+                <td>San Fransisco, CA</td>
+              </tr>
+              <tr>
+                <td class="table-title">EMPLOYMENT TYPE</td>
+                <td>Full-time</td>
+              </tr>
+
+              <tr>
+                <td class="table-title">EXPERIENCE</td>
+                <td>Mid-level</td>
+              </tr>
+
+              <tr>
+                <td class="table-title">STATUS</td>
+                <td>Open</td>
+              </tr>
+
+              <tr>
+                <td class="table-title">DESCRIPTION</td>
+                <td>Ennui disrupt tote bag copper mug hexagon, craft beer selfies cred occupy truffaut master cleanse stumptown fashion axe brooklyn pop-up. Banh mi fashion axe succulents aesthetic palo santo, woke poutine everyday carry next level hell of. Hexagon banh mi photo booth wayfarers hell of direct trade edison bulb.</td>
+              </tr>
+
+              <tr>
+                <td class="table-title">HIRING LEAD</td>
+                <td><img src="./assets/mcmustache.png" alt="guy with a mustache"><div class="hiring-span">Mr. Mustache</div></td>
+              </tr>
+
+              <tr>
+                <td class="table-title">APPROVED SALARY</td>
+                <td>$58,000</td>
+              </tr>
+            </table>
+
+            <div class="all-bottom-right">
+              <div class="bottom-right-btns">
+                <button class="social-media fbook">Post to Facebook</button>
+                <button class="social-media twitter">Tweet this Job</button>
+                <button class="social-media linkedin">Post to Linkedin</button>
+              </div>
+
+              <div class="all-links">
+                <div class="links">
+                  <h3><img src="./assets/world-grid.svg" alt="globe grid">
+                  Link to this Job</h3>
+                  <p>Tofu mustache est celiac. Echo park voluptate blue bottle.</p>
+                  <div class="group-input-btn">
+                    <input type="text" placeholder="http://loreumipsum.cn/huraay">
+                    <button>Copy</button>
+                  </div>
+                </div>
+
+                <div class="links">
+                  <h3><img src="./assets/shutter.svg" alt="camera shutter icon">
+                  Use the Button Widget</h3>
+                  <p>Truffaut mollit snackwave aliqua, aesthetic consequat.</p>
+                  <div class="group-input-btn">
+                    <input type="text" placeholder="<script type='text/javascript' src>">
+                    <button>Copy</button>
+                  </div>
+                </div>
+
+                <div class="links">
+                  <h3><img src="./assets/paper-plane.svg" alt="plane icon">
+                  Upload Resumes by Email</h3>
+                  <p>Lomo squid actually, velit kinfolk keytar PBR&B pitchfork in pok. </p>
+                  <input type="text" class="upload" placeholder="name@place.com">
+                </div>
+              </div>
             </div>
           </div>
         </div>
